@@ -1,0 +1,190 @@
+*{
+    padding: 0%;
+    margin: 0;    
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    background-color: rgba(92, 83, 83, 0.541);
+    min-height: 100em;
+    color: white;
+    margin: auto;
+    
+    
+}
+.parant{
+    position: relative;
+    top: 10em;    
+    display: flex ;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 10em;
+}
+span{
+    color: rgb(165, 42, 42);
+    font-weight: bold;
+}
+ .parant .main{
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    justify-content: center;
+    
+    
+}
+.contact{
+    height: 50px;
+    width: 15px;
+    border-radius: 50%;
+   color: brown;
+    padding-left: 20px;
+    margin: 2px;
+    font-weight: bold;
+    animation: animate 3s alternate infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translatex(0px);
+    }
+    50%{
+        transform: translatex(-30px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+    
+}
+.contact:nth-child(1){
+    animation-delay: 0.2s;
+}
+.contact:nth-child(2){
+    animation-delay: 0.4s;
+}
+.contact:nth-child(3){
+    animation-delay: 0.6s;
+}
+.contact:nth-child(4){
+    animation-delay: 0.8s;
+}
+.contact:nth-child(5){
+    animation-delay: 1s;
+}
+.contact:nth-child(6){
+    animation-delay: 1.2s;
+}
+.contact:nth-child(7){
+    animation-delay: 1.4s;
+}
+.contact:nth-child(8){
+    animation-delay: 1.6s;
+}
+.contact:nth-child(9){
+    animation-delay: 1.8s;
+}
+img{
+    width: 250px;
+    height: 250px;
+    outline: 10px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+
+}
+.fa-arrow-down-long{
+    color: rgb(255, 255, 255);
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: arrow;
+    height: 20px;
+
+}
+@keyframes arrow{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+
+.links {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color:brown
+    ;
+    padding: 30px 100px;
+    align-items: center;
+    border-radius: 50px;
+    animation-duration: 0.7s;
+    color: white;
+    animation: bottom 2s alternate infinite;    
+
+}
+
+a:hover{
+    margin: 15px;
+    border-radius: 20px;
+    transition: all 1s 0s ease-in-out;
+    animation-duration: 2s;
+
+
+}
+
+@keyframes bottom {
+    0%{
+        transform: translatex(0px)
+    }
+    30%{
+        transform: translatex(10px)
+    }
+   
+    100%{
+        transform: translatex(0px)
+    }
+   
+    
+ }
+ 
+.fa-facebook{
+    color: blue;
+    margin: 10px;
+    
+
+}
+
+.fa-instagram{
+    color: rgb(255, 0, 0);
+    margin: 10px;
+
+}
+.fa-whatsapp{
+    color: rgb(43, 255, 0);
+    margin: 10px;
+
+}
+.fa-telegram{
+    color: rgb(43, 177, 177);
+    margin: 10px;
+
+}
